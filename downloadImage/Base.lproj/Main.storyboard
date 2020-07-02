@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="downloadImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TZp-ED-hKk">
+                                <rect key="frame" x="25" y="94" width="364" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Oxu-NO-Spr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wu-ve-j3w">
+                                <rect key="frame" x="190" y="410" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oRH-Oz-m4Y">
+                                <rect key="frame" x="25" y="465" width="364" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="StE-gr-gYi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cf6-48-8TQ">
+                                <rect key="frame" x="137" y="781" width="140" height="30"/>
+                                <state key="normal" title="Display saved image"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cf6-48-8TQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3zF-6d-JUh"/>
+                            <constraint firstItem="Cf6-48-8TQ" firstAttribute="top" secondItem="oRH-Oz-m4Y" secondAttribute="bottom" constant="16" id="RW3-n5-Foh"/>
+                            <constraint firstItem="TZp-ED-hKk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tsl-Bb-AnK"/>
+                            <constraint firstItem="TZp-ED-hKk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="a6a-6N-9nC"/>
+                            <constraint firstItem="oRH-Oz-m4Y" firstAttribute="top" secondItem="0wu-ve-j3w" secondAttribute="bottom" constant="25" id="aHn-Fm-NAQ"/>
+                            <constraint firstItem="oRH-Oz-m4Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="bMk-Jq-kLx"/>
+                            <constraint firstItem="0wu-ve-j3w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hcK-W3-8uf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oRH-Oz-m4Y" secondAttribute="trailing" constant="25" id="irU-DX-AbC"/>
+                            <constraint firstItem="0wu-ve-j3w" firstAttribute="top" secondItem="TZp-ED-hKk" secondAttribute="bottom" constant="16" id="qSl-0L-Xu7"/>
+                            <constraint firstItem="TZp-ED-hKk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="vAK-9e-Dyh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TZp-ED-hKk" secondAttribute="trailing" constant="25" id="yf9-Cf-8kZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displaySaveImageButton" destination="Cf6-48-8TQ" id="n1h-e6-UWV"/>
+                        <outlet property="imageToSaveImageView" destination="TZp-ED-hKk" id="zUP-O5-Gxc"/>
+                        <outlet property="saveImageButton" destination="0wu-ve-j3w" id="4Hr-iI-TtK"/>
+                        <outlet property="savedImageDisplayImageView" destination="oRH-Oz-m4Y" id="qJ4-Rc-Qu2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+</document>
